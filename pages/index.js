@@ -8,5 +8,11 @@ export default function Home() {
     console.log("jajajajaja aqui estoy");
   }, []);
 
-  return <Layout />;
+  return (
+    <>
+      <Layout>
+        <h1>hola norma</h1>
+      </Layout>
+    </>
+  );
 }

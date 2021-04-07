@@ -14,10 +14,10 @@ import {
 
 const { Header, Content, Footer, Sider } = Layout;
 
-export default function ADLayoutAd() {
+export default function ADLayoutAd(props) {
   return (
     <>
-      <Layout>
+      <Layout hasSider >
         <Sider
           style={{
             overflow: "auto",
@@ -27,7 +27,7 @@ export default function ADLayoutAd() {
           }}
         >
           <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]}>
+          <Menu theme="light" mode="inline" defaultSelectedKeys={["4"]}>
             <Menu.Item key="1" icon={<UserOutlined />}>
               Calculadora de consumo de edulcorantes
             </Menu.Item>
@@ -62,32 +62,9 @@ export default function ADLayoutAd() {
               className={styles.siteLayoutBackground}
               style={{ padding: 24, textAlign: "center" }}
             >
-              ...
-              <br />
-              Really
-              <br />
-              ...
-              <br />
-              ...
-              <br />
-              ...
-              <br />
-              long
-              <br />
-              ...
-              <br />
-              ...
-              <br />
-              ...
-              <br />
-              ...
-              <br />
-              content
+              {props.children}
             </div>
           </Content>
-          <Footer style={{ textAlign: "center" }}>
-            Ant Design ©2018 Created by Ant UED
-          </Footer>
         </Layout>
       </Layout>
     </>
