@@ -50,3 +50,9 @@ a {
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
   background-color: var(--greenlight)!important;
 }
+.ant-menu-submenu-selected {
+  color: var(--green) !important;
+}
+.PrimeraClase{
+  border: 3px solid red;
+}

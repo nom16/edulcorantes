@@ -13,7 +13,7 @@ import {
 } from "@ant-design/icons";
 
 const { Header, Content, Footer, Sider } = Layout;
-
+const {SubMenu} = Menu
 export default function ADLayoutAd(props) {
   return (
     <>
@@ -29,32 +29,42 @@ export default function ADLayoutAd(props) {
           <div className="logo" />
           <Menu theme="light" mode="inline" defaultSelectedKeys={["4"]}>
             <Menu.Item key="1" icon={<UserOutlined />}>
-              Calculadora de consumo de edulcorantes
+              Aditivos
             </Menu.Item>
             <Menu.Item key="2" icon={<VideoCameraOutlined />}></Menu.Item>
             <Menu.Item key="3" icon={<UploadOutlined />}>
-              Chuleta
+              Edulcorantes
             </Menu.Item>
             <Menu.Item key="4" icon={<BarChartOutlined />}>
-              Chuleta
+              Blabla
             </Menu.Item>
             <Menu.Item key="5" icon={<CloudOutlined />}>
-              nav 5
+              Clasificación
             </Menu.Item>
-            <Menu.Item key="6" icon={<AppstoreOutlined />}>
-              nav 6
-            </Menu.Item>
-            <Menu.Item key="7" icon={<TeamOutlined />}>
-              nav 7
-            </Menu.Item>
+            <SubMenu key="sub1" icon={<UserOutlined />} title="Calóricos">
+            <SubMenu key="sub2" icon={<UserOutlined />} title="Glucosa">
+              <Menu.Item key="3">Tom</Menu.Item>
+              <Menu.Item key="4">Bill</Menu.Item>
+              <Menu.Item key="5">Alex</Menu.Item>
+            </SubMenu>
+            </SubMenu>
+            <SubMenu key="sub3" icon={<UserOutlined />} title="No calóricos">
+            <SubMenu key="sub4" icon={<UserOutlined />} title="Sucralosa">
+              <Menu.Item key="3">Composición</Menu.Item>
+              <Menu.Item key="4">IDA</Menu.Item>
+              <Menu.Item key="5">Efectos</Menu.Item>
+            </SubMenu>
+            </SubMenu>
+
             <Menu.Item key="8" icon={<ShopOutlined />}>
               nav 8
-            </Menu.Item>
+            </Menu.Item> 
+            <Menu.Item key="9" icon={<ShopOutlined />}>sdfsd</Menu.Item>
           </Menu>
         </Sider>
         <Layout className={styles.siteLayout} style={{ marginLeft: 200 }}>
           <Header
-            className={styles.siteLayoutBackground}
+            className={"PrimeraClase"}
             style={{ padding: 0 }}
           />
           <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
