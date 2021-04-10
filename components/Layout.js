@@ -26,7 +26,7 @@ export default function ADLayoutAd(props) {
             left: 0,
           }}
         >
-          <div className="logo" />
+          <div className="top-nav" />
           <Menu
             onClick={(item) => {
               props.OnClickItem(item);
@@ -37,8 +37,7 @@ export default function ADLayoutAd(props) {
           >
             <Menu.Item key="1">Aditivos</Menu.Item>
             <Menu.Item key="2">Edulcorantes</Menu.Item>
-            <Menu.Item key="3">Clasificación</Menu.Item>
-            <Menu.Item key="4">Blabla</Menu.Item>
+            <Menu.Item key="4">EAI</Menu.Item>
             <Menu.Item key="5">Clasificación</Menu.Item>
             <SubMenu key="sub1" title="Calóricos">
               <SubMenu key="sub2" title="Glucosa">
@@ -60,18 +59,14 @@ export default function ADLayoutAd(props) {
           </Menu>
         </Sider>
         <Layout className={styles.siteLayout} style={{ marginLeft: 200 }}>
-          <Header
-            className={styles.siteLayoutBackground}
-            style={{ padding: 0 }}
-          />
-          <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
+          <div className="content-layout">
             <div
               className={styles.siteLayoutBackground}
               style={{ padding: 24, textAlign: "center" }}
             >
               {props.children}
             </div>
-          </Content>
+          </div>
         </Layout>
       </Layout>
     </>

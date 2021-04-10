@@ -7,8 +7,8 @@ body {
 }
 
 :root {
-  --green: #63CFAF;
-  --greenlight: #F0FAF8;
+  --green: #1890ff;
+  --greenlight: #EBF4FE;
 }
 
 a {
@@ -23,7 +23,6 @@ a {
 .ant-layout-sider {
   background: #fff !important;
 }
-
 
 .ant-layout-content {
   flex: auto;
@@ -48,12 +47,101 @@ a {
 }
 
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-  background-color: var(--greenlight)!important;
+  background-color: var(--greenlight) !important;
 }
 .ant-menu-submenu-selected {
   color: var(--green) !important;
 }
 
-.ant-menu-item .ant-menu-item-icon + span, .ant-menu-submenu-title .ant-menu-item-icon + span, .ant-menu-item .anticon + span, .ant-menu-submenu-title .anticon + span {
+.ant-menu-item .ant-menu-item-icon + span,
+.ant-menu-submenu-title .ant-menu-item-icon + span,
+.ant-menu-item .anticon + span,
+.ant-menu-submenu-title .anticon + span {
   font-size: 14px !important;
+}
+
+.top-nav {
+  height: 25px;
+}
+
+.content-layout {
+  min-height: 100vh;
+  height: fit-content;
+  background-color: #A5A5A1;
+}
+
+.header-layout {
+  background-color: #fff !important;
+  height: 64px !important;
+}
+
+.justify-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.container-paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-paragraph {
+  width: 73%;
+  margin-right: 1em;
+}
+
+.image-paragraph {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-paragraph img {
+  border-radius: 5px;
+}
+
+.text-image-paragraph {
+  padding-top: 1em;
+}
+
+.name-list-paragraph{
+  font-size: 15px;
+  color: #2E86AB;
+}
+
+h4.ant-typography, .ant-typography h4 {
+  margin-bottom: 0.3em !important;
+}
+
+
+.ant-typography, .ant-typography p {
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.text-container-description{
+  height: 160px;
+}
+
+.list-container-paragraph{
+  margin-top: -2em !important;
+}
+
+.title-list-paragraph{
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 1em;
+}
+
+.list-component{
+  margin-top:2em !important;
+}
+
+.ant-list-split .ant-list-item {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: .7em;
 }

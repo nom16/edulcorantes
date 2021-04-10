@@ -1,3 +1,14 @@
 .siteLayout .siteLayoutBackground {
   background: #fff;
+  border-radius: 6px;
+  margin: 2em;
+  -ms-box-shadow: 0 3px 6px rgba(54, 59, 97, 0.1),
+    0 3px 6px rgba(58, 63, 99, 0.09);
+  -o-box-shadow: 0 3px 6px rgba(54, 59, 97, 0.1),
+    0 3px 6px rgba(58, 63, 99, 0.09);
+  box-shadow: 0 3px 6px rgb(54 59 97 / 10%), 0 3px 6px rgb(58 63 99 / 9%);
+}
+
+.siteLayoutHeaderBackground {
+  background: #fff;
 }
